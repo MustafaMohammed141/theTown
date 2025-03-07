@@ -1,0 +1,13 @@
+.Sec1 {
+	background-image: url(/public/navSection.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+.navbar {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	/* gap: 500px; */
+}
