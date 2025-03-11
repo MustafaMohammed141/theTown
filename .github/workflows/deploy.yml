@@ -15,16 +15,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # أحدث نسخة
 
       - name: Install and Build
         run: |
           npm install
           npm run build
-          mv dist public  # إذا كنت تستخدم Vite
+          mv dist public  # لو بتستخدم Vite
 
-      - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2  # استخدام الإصدار الجديد
         with:
           path: public
 
@@ -33,4 +33,4 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v2  # استخدام الإصدار الجديد
