@@ -24,7 +24,7 @@ jobs:
           mv dist public  # لو بتستخدم Vite
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # استخدام الإصدار الجديد
+        uses: actions/upload-pages-artifact@v3  # استخدام الإصدار الجديد
         with:
           path: public
 
