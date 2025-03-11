@@ -23,10 +23,14 @@ jobs:
           npm run build
           mv dist public  # لو بتستخدم Vite
 
+      - name: Check build output
+        run: ls -l dist  # لو تستخدم Vite، لو CRA استخدم `ls -l build`
+
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3  # استخدام الإصدار الجديد
         with:
-          path: build
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest
