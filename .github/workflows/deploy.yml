@@ -24,13 +24,13 @@ jobs:
           mv dist public  # لو بتستخدم Vite
 
       - name: Check build output
-        run: ls -l dist  # لو تستخدم Vite، لو CRA استخدم `ls -l build`
+        run: ls -l build  # لو تستخدم Vite، لو CRA استخدم `ls -l build`
 
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3  # استخدام الإصدار الجديد
         with:
-          path: dist
+          path: build
 
   deploy:
     runs-on: ubuntu-latest
