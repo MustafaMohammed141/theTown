@@ -1,13 +1,54 @@
 .Sec1 {
-	background-image: url(/public/navSection.jpg);
+	background-image: url(/navSection.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
+	color: white;
 }
 .navbar {
-	padding: 20px;
+	padding: 20px 70px;
 	display: flex;
 	justify-content: space-between;
-	/* gap: 500px; */
+	font-family: "Comic Sans MS", cursive;
+	font-size: 1.5em;
+	margin: auto auto;
+}
+.me {
+	color: blue;
+	font-weight: bold;
+}
+.nbUl {
+	width: calc(100vw / 3);
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+.nbLink {
+	transition: color 0.2s ease-in-out;
+}
+.nbLink:hover {
+	cursor: pointer;
+	color: blue;
+	transition: color 0.2s ease-in-out;
+}
+.Sec1-content {
+	font-family: sans-serif;
+	display: flex;
+	height: calc(100vh - 76px);
+	justify-content: center;
+	align-items: center;
+	line-height: 30px;
+}
+.sec1Title {
+	font-weight: normal;
+	font-size: 50px;
+}
+.sec1Txt {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 1rem;
+}
+.navActive {
+	color: blue;
 }
