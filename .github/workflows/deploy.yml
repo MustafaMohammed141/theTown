@@ -33,4 +33,4 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2  # استخدام الإصدار الجديد
+        uses: actions/deploy-pages@v3  # استخدام الإصدار الجديد
