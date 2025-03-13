@@ -4,11 +4,9 @@ import { useEffect } from "react";
 function Header() {
 	useEffect(() => {
 		const nbLink = document.querySelectorAll(".nbLink");
-
 		nbLink.forEach((Link) => {
 			Link.addEventListener("click", function () {
 				let Active = document.querySelector(".navActive");
-
 				if (Link.classList.contains("navActive")) {
 					return;
 				} else {
