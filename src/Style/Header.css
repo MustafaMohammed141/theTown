@@ -1,4 +1,4 @@
-.Sec1 {
+.header {
 	background-image: url(/navSection.jpg);
 	background-position: center;
 	background-size: cover;
@@ -32,7 +32,7 @@
 	color: blue;
 	transition: color 0.2s ease-in-out;
 }
-.Sec1-content {
+.header-content {
 	font-family: sans-serif;
 	display: flex;
 	height: calc(100vh - 76px);
@@ -40,11 +40,11 @@
 	align-items: center;
 	line-height: 30px;
 }
-.sec1Title {
+.headerTitle {
 	font-weight: normal;
 	font-size: 50px;
 }
-.sec1Txt {
+.headerTxt {
 	text-align: center;
 	margin-top: 20px;
 	font-size: 1rem;

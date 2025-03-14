@@ -17,7 +17,7 @@ function Header() {
 		});
 	}, []);
 	return (
-		<section className="Sec1">
+		<section className="header">
 			<nav className="navbar">
 				<div className="nbTitle">
 					<h3 className="nbLink">Online</h3>
@@ -30,10 +30,10 @@ function Header() {
 					</ul>
 				</div>
 			</nav>
-			<div className="Sec1-content">
+			<div className="header-content">
 				<div>
-					<h1 className="sec1Title">The Town</h1>
-					<div className="sec1Txt">
+					<h1 className="headerTitle">The Town</h1>
+					<div className="headerTxt">
 						<p>WebSite HTML5,CSS3</p>
 						<p>
 							by <span className="me">Mustafa Abdulhafez</span>
