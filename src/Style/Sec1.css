@@ -1,1 +1,9 @@
-
+.sec1 {
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 12px;
+	margin: 0px auto;
+}
+.sec1-textContainer {
+	width: 400px;
+}
